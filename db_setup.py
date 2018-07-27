@@ -5,7 +5,7 @@ connection = pymysql.connect(host='localhost',user=dbconfig.db_user,passwd=dbcon
 
 try:
 	with connection.cursor() as cursor:
-		sql = "CREATE DATABASE OF NOT EXISTS crimemap"
+		sql = "CREATE DATABASE IF NOT EXISTS crimemap"
 		cursor.execute(sql)
 		sql = """CREATE TABLE IF NOT EXISTS crimemap.crimes(
 		id int NOT NULL AUTO_INCREMENT,
