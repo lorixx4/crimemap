@@ -5,6 +5,8 @@ class MockDBHelper:
         return []
     def add_input(self, data):
         pass
+    def add_crime(self,category,date,latitude,longitude.description):
+        pass    
     def clear_all(self):
         pass            
     
